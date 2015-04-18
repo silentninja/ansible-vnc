@@ -1,0 +1,10 @@
+---
+
+- name: Provision a vnc server
+  hosts: vnc-server
+  sudo: yes
+  gather_facts: True  
+  sudo_user: root
+  remote_user: root
+  roles:
+    - vnc
